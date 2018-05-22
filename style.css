@@ -1,0 +1,143 @@
+@import url(//db.onlinewebfonts.com/c/2a27f7d4b49878738acf8e05519ae0cc?family=Aire+Bold+Std);
+@import url(//db.onlinewebfonts.com/c/8afdb40e363984e2e52282f69a16e1fd?family=Fine+Style);
+
+@font-face {font-family: "Aire Bold Std";
+  src: url("//db.onlinewebfonts.com/t/2a27f7d4b49878738acf8e05519ae0cc.eot");
+  src: url("//db.onlinewebfonts.com/t/2a27f7d4b49878738acf8e05519ae0cc.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/2a27f7d4b49878738acf8e05519ae0cc.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/2a27f7d4b49878738acf8e05519ae0cc.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/2a27f7d4b49878738acf8e05519ae0cc.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/2a27f7d4b49878738acf8e05519ae0cc.svg#Aire Bold Std") format("svg");
+}
+
+@font-face {font-family: "Fine Style";
+  src: url("//db.onlinewebfonts.com/t/8afdb40e363984e2e52282f69a16e1fd.eot");
+  src: url("//db.onlinewebfonts.com/t/8afdb40e363984e2e52282f69a16e1fd.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/8afdb40e363984e2e52282f69a16e1fd.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/8afdb40e363984e2e52282f69a16e1fd.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/8afdb40e363984e2e52282f69a16e1fd.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/8afdb40e363984e2e52282f69a16e1fd.svg#Fine Style") format("svg");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}  
+
+header {
+  margin: 0 auto;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 1000;
+  /* display:none; */
+}
+
+nav {
+  padding-top: 2%;
+  background-color:  rgba(231, 231, 203, 0.75);
+  padding-bottom: 2.1%;
+}
+
+nav a {
+  color: #535e55;
+  /* text-transform: uppercase; */
+  margin:0 0.5%;
+  /* text-shadow: 0px 0px 2px #000; */
+  font-family: "Aire Bold Std";
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+nav a:link, a:visited {
+  text-decoration: none;
+  text-shadow: 1px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  /* padding: 0 10%; */
+  /* background: rgb(231, 231, 203); */
+}
+
+.leafHolder {
+  width: 100%;
+  height: 20px;
+}
+
+h1 {
+  font-family: "Aire Bold Std";
+  letter-spacing: 0.25ch;
+  font-size: 60px;
+  font-weight: lighter;
+  transform: scale(1, 1.4);
+}
+
+.normalFont {
+  font-family: "Fine Style";
+  font-size: 50px;
+}
+
+.fullPane {
+  height:100vh;
+  margin:0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: rgb(91, 155, 118); */
+  background: rgb(231, 231, 203);
+}
+
+.fullPane h1 {
+  /* color:white; */
+  color: black;
+  text-align: center;
+  margin: 0;
+  /* text-shadow: 1px 1px 2px #000; */
+}
+
+.normalPane {
+  height:100vh;
+  margin:0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: rgb(91, 155, 118); */
+  background: rgb(231, 231, 203);
+}
+
+.horizontalBlade {
+  width:100%;
+  margin-top: -8%;
+}
+
+.horizontalWrapper {
+  width: 100%;
+  background: rgb(231, 231, 203);
+  border-bottom: 2px dashed rgb(255, 255, 223) ;
+}
+
+.horizontalInner {
+  margin: 0 auto;
+  height: 0;
+  width:20vw;
+}
+
+.homepageInner {
+  background-image: url("/images/corner-top-left.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute; 
+}
