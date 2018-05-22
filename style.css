@@ -131,7 +131,7 @@ h1 {
 }
 
 .homepageInner {
-  background-image: url("/images/corner-top-left.png");
+  background-image: url("images/corner-top-left.png");
   background-size: 40%;
   background-repeat: no-repeat;
   opacity: 0.5;
