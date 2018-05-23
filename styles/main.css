@@ -87,41 +87,33 @@ h1, h2 {
   font-size: 50px;
 }
 
-@media only screen and (max-width: 600px)  {
-  h1 {
-    font-size: 30px;
-  }
-
-  .normalFont {
-    font-size: 25px;
-  }
-
-  .hidden {
-    display: none;
-  }
-
-  header {
-    background-color:  rgb(245, 245, 219, 0.6);
-    text-align: right;
-  }
-
-  nav {
-    background: none;
-  }
-
-  nav a {
-    display: block;
-    margin-top: 20px;
-    text-align: right;
-    text-transform: uppercase;
-    padding-right: 15px;
-  }
+.horizontalBlade {
+  width:100%;
+  margin-top: -8%;
 }
 
-@media only screen and (min-width: 601px)  {
-  .hamburger {
-    display: none !important;
-  }
+.horizontalWrapper {
+  width: 100%;
+  background: rgb(231, 231, 203);
+  border-bottom: 2px dashed rgb(255, 255, 223) ;
+}
+
+.horizontalInner {
+  margin: 0 auto;
+  height: 0;
+  width:20vw;
+}
+
+.homepageInner {
+  background-image: url("images/corner-top-left.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute; 
 }
 
 .fullPane {
@@ -157,31 +149,51 @@ h1, h2 {
   background: rgb(231, 231, 203);
 }
 
-.horizontalBlade {
-  width:100%;
-  margin-top: -8%;
+/* Small */
+@media only screen and (max-width: 600px)  {
+  h1 {
+    font-size: 30px;
+  }
+
+  .normalFont {
+    font-size: 25px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  header {
+    background-color:  rgb(245, 245, 219, 0.6);
+    text-align: right;
+  }
+
+  nav {
+    background: none;
+  }
+
+  nav a {
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+    text-transform: uppercase;
+    padding-right: 15px;
+  }
+
+  .horizontalInner {
+    width: 50vw;
+  }
 }
 
-.horizontalWrapper {
-  width: 100%;
-  background: rgb(231, 231, 203);
-  border-bottom: 2px dashed rgb(255, 255, 223) ;
+@media only screen and (min-width: 601px) and (max-width: 1230px) {
+  .horizontalInner {
+    width: 30vw;
+  }
 }
 
-.horizontalInner {
-  margin: 0 auto;
-  height: 0;
-  width:20vw;
-}
-
-.homepageInner {
-  background-image: url("images/corner-top-left.png");
-  background-size: 40%;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute; 
+/* Big */
+@media only screen and (min-width: 601px) {
+  .hamburger {
+    display: none !important;
+  }
 }
