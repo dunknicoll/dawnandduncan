@@ -23,7 +23,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-}  
+}
+
+button:focus {outline:0;}
 
 header {
   margin: 0 auto;
@@ -99,12 +101,12 @@ h1, h2 {
   }
 
   header {
-    background-color:  rgb(245, 245, 219);
+    background-color:  rgb(245, 245, 219, 0.6);
     text-align: right;
   }
 
   nav {
-    background-color:  rgb(245, 245, 219);
+    background: none;
   }
 
   nav a {
