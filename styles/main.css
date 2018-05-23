@@ -154,7 +154,7 @@ h1, h2 {
 }
 
 /* Small */
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 667px)  {
   h1 {
     font-size: 30px;
   }
@@ -190,14 +190,14 @@ h1, h2 {
   }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1230px) {
+@media only screen and (min-width: 668px) and (max-width: 1230px) {
   .horizontalInner {
     width: 30vw;
   }
 }
 
 /* Big */
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 668px) {
   .hamburger {
     display: none !important;
   }
