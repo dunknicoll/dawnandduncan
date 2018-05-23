@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dawn and Duncan</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="styles/main.css" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="manifest" href="manifest.json">
+
+  <link href="styles/hamburgers.min.css" rel="stylesheet">
 
   <link href="//db.onlinewebfonts.com/c/2a27f7d4b49878738acf8e05519ae0cc?family=Aire+Bold+Std" rel="stylesheet" type="text/css" />
   <link href="//db.onlinewebfonts.com/c/8afdb40e363984e2e52282f69a16e1fd?family=Fine+Style" rel="stylesheet" type="text/css" />
@@ -17,18 +19,24 @@
 <body>
   <div class="container">
     <header>
-      <nav>
+      <button id="menuButton" class="hamburger hamburger--spin" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <nav id="navigation" class="hidden">
         <a href="#home">Home</a>
         <a href="#wedding">The Wedding</a>
         <a href="#venue">The Venue</a>
         <a href="#accommodation">Accommodation</a>
-        <a href="#rsvp">RSVP</a>
+        <a href='#gifts'>Gifts</a>
+        <a class="rsvp" href="#rsvp">RSVP</a>
       </nav>
     </header>
     <a name="home"></a>
     <div class="fullPane">
-      <div class="homepageInner"></div>
-      <h1>Dawn <span class="normalFont">&amp;</span> Duncan</h1>
+      <!-- <div class="homepageInner"></div> -->
+      <h1>Dawn <span class="normalFont">&amp;</span> Duncan<br>18.08.18</h1>
     </div>
     <div class="horizontalWrapper">
       <div class="horizontalInner">
@@ -62,11 +70,23 @@
           <img src="images/horizontal-blade.png" class="horizontalBlade"/>
       </div>
     </div>
+    <a name="gifts"></a>
+    <div class="fullPane">
+        <h1>Gifts</h1>
+    </div>
+    <div class="horizontalWrapper">
+      <div class="horizontalInner">
+          <img src="images/horizontal-blade.png" class="horizontalBlade"/>
+      </div>
+    </div>
     <a name="rsvp"></a>
     <div class="fullPane">
         <h1>RSVP</h1>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftSO2Ac8u1Du_0l_6LyMgsiULHX1-9f4aUuvPHOGjVtC8pGg/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     </div>
   </div>
+
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>

@@ -72,7 +72,7 @@ nav a:hover {
   height: 20px;
 }
 
-h1 {
+h1, h2 {
   font-family: "Aire Bold Std";
   letter-spacing: 0.25ch;
   font-size: 60px;
@@ -85,10 +85,48 @@ h1 {
   font-size: 50px;
 }
 
+@media only screen and (max-width: 600px)  {
+  h1 {
+    font-size: 30px;
+  }
+
+  .normalFont {
+    font-size: 25px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  header {
+    background-color:  rgb(245, 245, 219);
+    text-align: right;
+  }
+
+  nav {
+    background-color:  rgb(245, 245, 219);
+  }
+
+  nav a {
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+    text-transform: uppercase;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 601px)  {
+  .hamburger {
+    display: none !important;
+  }
+}
+
 .fullPane {
-  height:100vh;
+  min-height: 100vh;
   margin:0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   /* background: rgb(91, 155, 118); */
@@ -97,14 +135,18 @@ h1 {
 
 .fullPane h1 {
   /* color:white; */
-  color: black;
+  color: #363c3f;
   text-align: center;
   margin: 0;
   /* text-shadow: 1px 1px 2px #000; */
 }
 
+.rsvp {
+  color:#363c3f;
+}
+
 .normalPane {
-  height:100vh;
+  min-height: 100vh;
   margin:0 auto;
   display: flex;
   justify-content: center;
