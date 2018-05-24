@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dawn and Duncan</title>
   <link href="styles/main.css" rel="stylesheet" type="text/css" />
+  <link href="styles/form.css" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="manifest" href="manifest.json">
 
@@ -84,11 +85,13 @@
     <a name="rsvp"></a>
     <div class="fullPane">
         <h1>RSVP</h1>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftSO2Ac8u1Du_0l_6LyMgsiULHX1-9f4aUuvPHOGjVtC8pGg/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <div class="cognito"></div>
     </div>
   </div>
 
+  <script src="https://services.cognitoforms.com/s/49QtWigarEG_8PvyBWHteQ"></script>
   <script src="scripts/main.js"></script>
+  <script>Cognito.load("forms", { id: "1" });</script>
 </body>
 
 </html>

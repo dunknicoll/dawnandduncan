@@ -1,0 +1,65 @@
+.c-forms-heading {
+    display:none;
+}
+
+.c-forms-form {
+    background: none !important;
+}
+
+.cognito {
+    width: 50vw;
+}
+
+.cognito input, .cognito select, .cognito textarea {
+    border-color: transparent !important;
+    border-bottom-left-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+    border-bottom-style: solid !important;
+    border-bottom-width: 1px !important;
+    border-left-style: solid !important;
+    border-left-width: 1px !important;
+    border-right-style: solid !important;
+    border-right-width: 1px !important;
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+    border-top-style: solid !important;
+    border-top-width: 1px !important;
+    font-size: 25px !important;
+    font-family: "Aire Bold Std" !important;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.cognito .c-label {
+    font-size: 25px !important;
+    font-family: "Aire Bold Std" !important;
+    margin-bottom: 2px;
+}
+
+.cognito input:focus, .cognito select:focus, .cognito textarea:focus {
+    outline: none !important;
+    border:1px solid rgb(165, 194, 172) !important;
+    /* box-shadow: 0 0 10px rgb(89, 155, 119); */
+}
+
+.cognito .c-action {
+    float: none;
+}
+
+.cognito .c-button-section {
+    text-align: right;
+}
+
+.cognito #c-submit-button {
+    background-color: rgb(63, 104, 63);
+    border: none;
+    font-size: 25px !important;
+    font-family: "Aire Bold Std" !important;
+}
+
+.cognito #c-submit-button:hover {
+    background-color: rgb(106, 155, 106);
+}
+
+.cognito .c-field {
+    margin-bottom: 15px;
+}
