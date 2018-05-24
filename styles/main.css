@@ -204,3 +204,7 @@ h1, h2 {
     display: none !important;
   }
 }
+
+.fullPane h1.padTop {
+  margin-top: 5%;
+}
