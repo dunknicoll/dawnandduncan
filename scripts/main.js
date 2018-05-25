@@ -29,5 +29,13 @@ document.addEventListener('DOMContentLoaded', function (o) {
         menuButton.classList.toggle('is-active');
         body.classList.toggle('stop-scrolling');
         html.classList.toggle('stop-scrolling');
+
+        if (menuButton.classList.contains('is-active')) {
+            body.addEventListener('touchmove', function (e) {
+                e.preventDefault();
+            }, false);
+        } else {
+            body.removeEventListener('touchmove');
+        }
     }.bind(this))
 }.bind(this));
