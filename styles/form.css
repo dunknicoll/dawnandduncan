@@ -81,5 +81,5 @@
 }
 
 .cognito .c-span-24, .cognito .c-forms-form {
-    max-width: none;   
+    max-width: none !important;   
 }
