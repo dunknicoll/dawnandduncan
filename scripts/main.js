@@ -31,11 +31,9 @@ document.addEventListener('DOMContentLoaded', function (o) {
         html.classList.toggle('stop-scrolling');
 
         if (menuButton.classList.contains('is-active')) {
-            body.addEventListener('touchmove', function (e) {
-                e.preventDefault();
-            }, false);
+            document.ontouchmove = function (e) { e.preventDefault(); }
         } else {
-            body.removeEventListener('touchmove');
+            document.ontouchmove = function (e) { return true; }
         }
     }.bind(this))
 }.bind(this));
