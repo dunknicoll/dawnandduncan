@@ -8,6 +8,7 @@
 
 .cognito {
     width: 50vw;
+    max-width: 900px;
 }
 
 .cognito input, .cognito select, .cognito textarea {

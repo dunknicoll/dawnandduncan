@@ -188,9 +188,13 @@ h1, h2 {
     text-align: right;
   }
 
+  header.is-active {
+    height:100%;
+  }
+
   nav {
     background: none;
-    min-height: 100vh;
+    border-top: 2px dashed white;
   }
 
   nav a {
