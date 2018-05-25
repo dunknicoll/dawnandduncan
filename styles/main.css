@@ -155,6 +155,16 @@ h1, h2 {
   background: rgb(231, 231, 203);
 }
 
+.fullPane h1.padTop {
+  margin-top: 5%;
+}
+
+@media only screen and (min-width: 668px) and (max-width: 1160px)  {
+  .fullPane h1.padTop {
+    margin-top: 6.5%;
+  }
+}
+
 /* Small */
 @media only screen and (max-width: 667px)  {
   h1 {
@@ -190,6 +200,10 @@ h1, h2 {
   .horizontalInner {
     width: 50vw;
   }
+
+  .fullPane h1.padTop {
+    margin-top: 8%;
+  }
 }
 
 @media only screen and (min-width: 668px) and (max-width: 1230px) {
@@ -203,8 +217,4 @@ h1, h2 {
   .hamburger {
     display: none !important;
   }
-}
-
-.fullPane h1.padTop {
-  margin-top: 5%;
 }

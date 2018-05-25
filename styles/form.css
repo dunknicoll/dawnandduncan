@@ -29,10 +29,14 @@
     background: rgba(255, 255, 255, 0.5);
 }
 
-.cognito .c-label {
+.cognito .c-label, .c-forms-confirmation-message {
     font-size: 25px !important;
     font-family: "Aire Bold Std" !important;
     margin-bottom: 2px;
+}
+
+.c-forms-confirmation-message { 
+    text-align: center;
 }
 
 .cognito input:focus, .cognito select:focus, .cognito textarea:focus {
@@ -50,16 +54,23 @@
 }
 
 .cognito #c-submit-button {
-    background-color: rgb(63, 104, 63);
+    background-color: rgb(82, 97, 68);
     border: none;
     font-size: 25px !important;
     font-family: "Aire Bold Std" !important;
 }
 
 .cognito #c-submit-button:hover {
-    background-color: rgb(106, 155, 106);
+    background-color: rgb(113, 129, 97);
 }
 
 .cognito .c-field {
     margin-bottom: 15px;
+}
+
+/* Small */
+@media only screen and (max-width: 667px)  {
+    .cognito {
+        width: 90vw;
+    }
 }
