@@ -28,7 +28,7 @@ body {
 .stop-scrolling {
     overflow: hidden;
     position: relative;
-    height: 100%;
+    height: 100vh;
 }
 
 button:focus {outline:0;}

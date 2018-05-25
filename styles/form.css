@@ -29,6 +29,11 @@
     background: rgba(255, 255, 255, 0.5);
 }
 
+.cognito .c-label {
+    font-weight: normal;
+    letter-spacing: 0.1ch;
+}
+
 .cognito .c-label, .c-forms-confirmation-message {
     font-size: 25px !important;
     font-family: "Aire Bold Std" !important;
