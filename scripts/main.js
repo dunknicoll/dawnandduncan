@@ -25,6 +25,14 @@ document.addEventListener('DOMContentLoaded', function (o) {
 
     removeFooter(limitCheck, limitCount);
 
+    navItems.forEach(navItem => {
+        navItem.addEventListener('click', function (e) {
+            if (menuButton.classList.contains('is-active')) {
+                menuButton.dispatchEvent(new Event('click'));
+            }
+        });
+    });
+
     menuButton.addEventListener('click', function (e) {
         e.preventDefault();
         header.classList.toggle('is-active');
@@ -32,21 +40,5 @@ document.addEventListener('DOMContentLoaded', function (o) {
         menuButton.classList.toggle('is-active');
         body.classList.toggle('stop-scrolling');
         html.classList.toggle('stop-scrolling');
-
-        if (menuButton.classList.contains('is-active')) {
-            navItems.forEach(navItem => {
-                navItem.addEventListener('click', function (e) {
-                    menuButton.dispatchEvent(new Event('click'));
-                });
-            });
-            document.ontouchmove = function (e) { e.preventDefault(); }
-        } else {
-            navItems.forEach(navItem => {
-                navItem.removeEventListener('click', function (e) {
-                    menuButton.dispatchEvent(new Event('click'));
-                });
-            });
-            document.ontouchmove = function (e) { return true; }
-        }
     }.bind(this))
 }.bind(this));
