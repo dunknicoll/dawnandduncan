@@ -118,7 +118,7 @@ h1, h2 {
   left: 0;
   bottom: 0;
   right: 0;
-  position: absolute; 
+  position: absolute;
 }
 
 .leafFooterContainer {
@@ -147,6 +147,7 @@ h1, h2 {
   color: #363c3f;
   text-align: center;
   margin: 0;
+  align-self: center;
   /* text-shadow: 1px 1px 2px #000; */
 }
 
