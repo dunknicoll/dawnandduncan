@@ -172,20 +172,38 @@ h1, h2 {
   .fullPane h1.padTop {
     margin-top: 6.5%;
   }
+}
 
+@media only screen and (min-width: 755px) and (max-width: 1000px)  {
+  .leafHeader {
+    background-size: 150%;
+    background-position-x: 50%;
+  }
+}
+
+@media only screen and (min-width: 668px) and (max-width: 755px)  {
   .leafHeader {
     background-size: 200%;
     background-position-x: 50%;
   }
 }
 
-/* Small */
-@media only screen and (max-width: 480px)  {
+@media only screen and (min-width: 481px) and (max-width: 667px)  {
   .leafHeader {
-    background-size: 400%;
+    background-size: 200%;
     background-position-x: 50%;
   }
+}
 
+@media only screen and (max-width: 480px)  {
+  .leafHeader {
+    background-size: 350%;
+    background-position-x: 50%;
+  }
+}
+
+/* Small */
+@media only screen and (max-width: 480px)  {
   h1 {
     font-size: 30px;
   }
@@ -235,11 +253,6 @@ h1, h2 {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 667px)  {
-  .leafHeader {
-    background-size: 400%;
-    background-position-x: 50%;
-  }
-
   h1 {
     font-size: 30px;
   }
