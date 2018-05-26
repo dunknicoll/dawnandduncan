@@ -142,6 +142,12 @@ h1, h2 {
   background: rgb(231, 231, 203);
 }
 
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) { 
+  .fullPane {
+    height: 100vh;
+  }
+}
+
 .fullPane h1 {
   /* color:white; */
   color: #363c3f;
