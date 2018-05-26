@@ -46,7 +46,6 @@ header {
 }
 
 nav {
-  padding-top: 2%;
   background-color:  rgba(231, 231, 203, 0.75);
   padding-bottom: 2.1%;
 }
@@ -181,7 +180,7 @@ h1, h2 {
 }
 
 /* Small */
-@media only screen and (max-width: 667px)  {
+@media only screen and (max-width: 480px)  {
   .leafHeader {
     background-size: 400%;
     background-position-x: 50%;
@@ -212,14 +211,72 @@ h1, h2 {
   nav {
     background: none;
     border-top: 2px dashed white;
+    padding-top: none !important;
   }
 
   nav a {
     display: block;
-    margin-top: 20px;
+    padding-top: 20px;
     text-align: right;
     text-transform: uppercase;
     padding-right: 15px;
+    font-size: 5vh;
+    border-bottom: 2px dashed white;
+    padding-bottom: 15px;
+  }
+
+  .horizontalInner {
+    width: 50vw;
+  }
+
+  .fullPane h1.padTop {
+    margin-top: 8%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 667px)  {
+  .leafHeader {
+    background-size: 400%;
+    background-position-x: 50%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .normalFont {
+    font-size: 25px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  header {
+    background-color:  rgba(245, 245, 219, 0.6);
+    text-align: right;
+  }
+
+  header.is-active {
+    height:100%;
+    background-color: rgb(228, 228, 195);
+  }
+
+  nav {
+    background: none;
+    border-top: 2px dashed white;
+    padding-top: none !important;
+  }
+
+  nav a {
+    display: block;
+    padding-top: 10px;
+    text-align: right;
+    text-transform: uppercase;
+    padding-right: 15px;
+    font-size: 5vh;
+    border-bottom: 2px dashed white;
+    padding-bottom: 10px;
   }
 
   .horizontalInner {
@@ -241,5 +298,9 @@ h1, h2 {
 @media only screen and (min-width: 668px) {
   .hamburger {
     display: none !important;
+  }
+
+  nav {
+    padding-top: 2%;
   }
 }
