@@ -35,12 +35,12 @@ document.addEventListener('DOMContentLoaded', function (o) {
 
         if (menuButton.classList.contains('is-active')) {
             navItems.addEventListener('click', function (e) {
-                menuButton.click();
+                menuButton.dispatchEvent('click');
             });
             document.ontouchmove = function (e) { e.preventDefault(); }
         } else {
             navItems.removeEventListener('click', function (e) {
-                menuButton.click();
+                menuButton.dispatchEvent('click');
             });
             document.ontouchmove = function (e) { return true; }
         }
