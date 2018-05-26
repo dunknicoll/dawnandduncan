@@ -1,22 +1,18 @@
-@import url(//db.onlinewebfonts.com/c/2a27f7d4b49878738acf8e05519ae0cc?family=Aire+Bold+Std);
-@import url(//db.onlinewebfonts.com/c/8afdb40e363984e2e52282f69a16e1fd?family=Fine+Style);
-
 @font-face {font-family: "Aire Bold Std";
-  src: url("//db.onlinewebfonts.com/t/2a27f7d4b49878738acf8e05519ae0cc.eot");
-  src: url("//db.onlinewebfonts.com/t/2a27f7d4b49878738acf8e05519ae0cc.eot?#iefix") format("embedded-opentype"),
-  url("//db.onlinewebfonts.com/t/2a27f7d4b49878738acf8e05519ae0cc.woff2") format("woff2"),
-  url("//db.onlinewebfonts.com/t/2a27f7d4b49878738acf8e05519ae0cc.woff") format("woff"),
-  url("//db.onlinewebfonts.com/t/2a27f7d4b49878738acf8e05519ae0cc.ttf") format("truetype"),
-  url("//db.onlinewebfonts.com/t/2a27f7d4b49878738acf8e05519ae0cc.svg#Aire Bold Std") format("svg");
+  src: url("/fonts/aire.eot");
+  src: url("/fonts/aire.eot?#iefix") format("embedded-opentype"),
+  url("/fonts/aire.woff2") format("woff2"),
+  url("/fonts/aire.woff") format("woff"),
+  url("/fonts/aire.ttf") format("truetype"),
+  url("/fonts/aire.svg") format("svg");
 }
 
 @font-face {font-family: "Fine Style";
-  src: url("//db.onlinewebfonts.com/t/8afdb40e363984e2e52282f69a16e1fd.eot");
-  src: url("//db.onlinewebfonts.com/t/8afdb40e363984e2e52282f69a16e1fd.eot?#iefix") format("embedded-opentype"),
-  url("//db.onlinewebfonts.com/t/8afdb40e363984e2e52282f69a16e1fd.woff2") format("woff2"),
-  url("//db.onlinewebfonts.com/t/8afdb40e363984e2e52282f69a16e1fd.woff") format("woff"),
-  url("//db.onlinewebfonts.com/t/8afdb40e363984e2e52282f69a16e1fd.ttf") format("truetype"),
-  url("//db.onlinewebfonts.com/t/8afdb40e363984e2e52282f69a16e1fd.svg#Fine Style") format("svg");
+  src: url("/fonts/finestyle.eot");
+  src: url("/fonts/finestyle.eot?#iefix") format("embedded-opentype"),
+  url("/fonts/finestyle.woff") format("woff"),
+  url("/fonts/finestyle.ttf") format("truetype"),
+  url("/fonts/finestyle.svg#Fine Style") format("svg");
 }
 
 body {
@@ -114,9 +110,9 @@ h1, h2 {
   width:20vw;
 }
 
-.homepageInner {
-  background-image: url("images/corner-top-left.png");
-  background-size: 40%;
+.leafHeader {
+  background-image: url("/images/leaf-header.png");
+  background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.5;
   top: 0;
@@ -124,6 +120,16 @@ h1, h2 {
   bottom: 0;
   right: 0;
   position: absolute; 
+}
+
+.leafFooterContainer {
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+.leafFooter {
+  width: 100%;
 }
 
 .fullPane {
@@ -167,10 +173,20 @@ h1, h2 {
   .fullPane h1.padTop {
     margin-top: 6.5%;
   }
+
+  .leafHeader {
+    background-size: 200%;
+    background-position-x: 50%;
+  }
 }
 
 /* Small */
 @media only screen and (max-width: 667px)  {
+  .leafHeader {
+    background-size: 400%;
+    background-position-x: 50%;
+  }
+
   h1 {
     font-size: 30px;
   }
