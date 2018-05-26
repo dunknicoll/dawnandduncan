@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function (o) {
     var header = document.querySelector('header');
     var body = document.body;
     var html = document.body.parentElement;
-    var navItems = document.querySelector('nav > a');
+    var navItems = document.querySelectorAll('nav > a');
 
     var limitCheck = 20;
     var limitCount = 0;
@@ -34,13 +34,17 @@ document.addEventListener('DOMContentLoaded', function (o) {
         html.classList.toggle('stop-scrolling');
 
         if (menuButton.classList.contains('is-active')) {
-            navItems.addEventListener('click', function (e) {
-                menuButton.dispatchEvent('click');
+            navItems.forEach(navItem => {
+                navItem.addEventListener('click', function (e) {
+                    menuButton.dispatchEvent(new Event('click'));
+                });
             });
             document.ontouchmove = function (e) { e.preventDefault(); }
         } else {
-            navItems.removeEventListener('click', function (e) {
-                menuButton.dispatchEvent('click');
+            navItems.forEach(navItem => {
+                navItem.removeEventListener('click', function (e) {
+                    menuButton.dispatchEvent(new Event('click'));
+                });
             });
             document.ontouchmove = function (e) { return true; }
         }
