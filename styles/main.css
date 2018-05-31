@@ -142,6 +142,16 @@ h1, h2 {
   background: rgb(231, 231, 203);
 }
 
+.fullPane a {
+  color: rgb(51, 160, 41);
+  text-decoration: none;
+}
+
+.fullPane a:hover {
+  /* color: rgb(26, 110, 18); */
+  text-decoration: underline;
+}
+
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) { 
   .fullPane {
     height: 100vh;
@@ -173,6 +183,15 @@ h1, h2 {
 
 .fullPane h1.padTop {
   margin-top: 5%;
+}
+
+.justifyText p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+a.noStyle {
+  color: inherit;
 }
 
 @media only screen and (min-width: 668px) and (max-width: 1160px)  {
@@ -323,4 +342,19 @@ h1, h2 {
   nav {
     padding-top: 2%;
   }
+}
+
+.venueInformation {
+  font-family: "Aire Bold Std";
+  font-size: 24px;
+  letter-spacing: 2px;
+  width: 80%;
+}
+
+p.venueAddress {
+  text-align: center;
+}
+
+p.centerText {
+  text-align: center;
 }
