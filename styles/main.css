@@ -21,6 +21,10 @@ body {
   font-family: sans-serif;
 }
 
+p {
+  font-family: "Aire Bold Std";
+}
+
 .stop-scrolling {
     /* overflow: hidden;
     position: absolute;
@@ -344,7 +348,7 @@ a.noStyle {
   }
 }
 
-.venueInformation {
+.normalText {
   font-family: "Aire Bold Std";
   font-size: 24px;
   letter-spacing: 2px;
@@ -356,5 +360,25 @@ p.venueAddress {
 }
 
 p.centerText {
+  text-align: center;
+}
+
+ul.centerText {
+  text-align: center;
+  list-style: none;
+  padding-left: 0px;
+}
+
+ul.centerText li {
+  margin-bottom: 15px;
+}
+
+#hotelList {
+  margin-bottom: 70px;
+}
+
+p.infoText {
+  font-size: 90%;
+  font-style: italic;
   text-align: center;
 }
