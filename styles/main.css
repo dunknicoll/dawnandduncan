@@ -23,6 +23,8 @@ body {
 
 p {
   font-family: "Aire Bold Std";
+  font-weight: bold;
+  color: #555;
 }
 
 .stop-scrolling {
@@ -150,6 +152,7 @@ h1, h2 {
 .fullPane a {
   color: rgb(51, 160, 41);
   text-decoration: none;
+  font-weight:bold;
 }
 
 .fullPane a:hover {
@@ -239,6 +242,10 @@ a.noStyle {
     font-size: 30px;
   }
 
+  .jumpDown {
+    display:block;
+  }
+
   .normalFont {
     font-size: 25px;
   }
@@ -280,6 +287,15 @@ a.noStyle {
 
   .fullPane h1.padTop {
     margin-top: 15%;
+  }
+
+  p.centerText a {
+    text-align: center;
+    display:block;
+  }
+
+  p.taxiInfo {
+    text-align: center !important;
   }
 }
 
@@ -391,5 +407,20 @@ p.infoText {
 @media only screen and (max-width: 700px)  {
   p.centerText {
     text-align: justify;
+  }
+}
+
+.mapImage {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.mapImage img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 700px)  {
+  .mapImage {
+    display: none;
   }
 }
