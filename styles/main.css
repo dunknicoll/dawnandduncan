@@ -52,6 +52,7 @@ header {
 nav {
   background-color:  rgba(231, 231, 203, 0.75);
   padding-bottom: 2.1%;
+  letter-spacing: 2px;
 }
 
 nav a {
