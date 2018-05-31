@@ -278,7 +278,7 @@ a.noStyle {
   }
 
   .fullPane h1.padTop {
-    margin-top: 8%;
+    margin-top: 15%;
   }
 }
 
@@ -381,4 +381,14 @@ p.infoText {
   font-size: 90%;
   font-style: italic;
   text-align: center;
+}
+
+.padBottom {
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 700px)  {
+  p.centerText {
+    text-align: justify;
+  }
 }
