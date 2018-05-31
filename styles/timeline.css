@@ -1,0 +1,61 @@
+.timelineWrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+ul.timeline {
+    list-style: none;
+    font-family: "Aire Bold Std";
+    margin-top:45px;
+    margin-bottom: 100px;
+    padding: 0;
+    width: 100%;
+}
+
+ul.timeline li {
+    display: flex;
+    width: 100%;
+}
+
+ul.timeline li:last-child {
+    border: 0;
+}
+
+ul.timeline li p {
+    display: block;
+    padding: 20px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+ul.timeline li p:nth-child(1) {
+    position: relative;
+    /* font-size: 14px; */
+    line-height: 2;
+    color:  #62686b;
+    width: 44%;
+    text-align: right;
+}
+
+ul.timeline li p:nth-child(1):after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: -9px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #999;
+    border-radius: 50%;
+    background: #fff;
+}
+
+ul.timeline li p:nth-child(2) {
+    flex: 1;
+    font-size: 24px;
+    border-left: 3px dashed #999;
+    width: 56%;
+}
