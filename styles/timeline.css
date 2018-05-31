@@ -35,27 +35,48 @@ ul.timeline li p:nth-child(1) {
     position: relative;
     /* font-size: 14px; */
     line-height: 2;
-    color:  #62686b;
+    color:  rgb(119, 126, 92);;
     width: 44%;
     text-align: right;
+    font-weight: bolder;
 }
 
 ul.timeline li p:nth-child(1):after {
     content: '';
     position: absolute;
     top: 25px;
-    right: -9px;
+    right: -8px;
     display: block;
-    width: 10px;
-    height: 10px;
-    border: 3px solid #999;
+    width: 8px;
+    height: 8px;
+    border: 3px solid rgb(119, 126, 92);
     border-radius: 50%;
-    background: #fff;
+    background: rgb(119, 126, 92);
 }
 
 ul.timeline li p:nth-child(2) {
     flex: 1;
     font-size: 24px;
-    border-left: 3px dashed #999;
+    border-left: 2px dashed rgb(119, 126, 92);
     width: 56%;
+}
+
+@media only screen and (max-width: 632px)  {
+    ul.timeline li p:nth-child(1) {
+        width: 12%;
+    }
+
+    ul.timeline li p:nth-child(2) {
+        width: 88%;
+    }
+}
+
+@media only screen and (min-width: 633px) and (max-width: 875px)  {
+    ul.timeline li p:nth-child(1) {
+        width: 40%;
+    }
+
+    ul.timeline li p:nth-child(2) {
+        width: 60%;
+    }
 }
