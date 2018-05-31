@@ -31,6 +31,7 @@ ul.timeline li p {
     padding: 20px;
     line-height: 1.4;
     margin: 0;
+    letter-spacing: 1px;
 }
 
 ul.timeline li p:nth-child(1) {
@@ -64,6 +65,10 @@ ul.timeline li p:nth-child(2) {
 }
 
 @media only screen and (max-width: 632px)  {
+    .timelineWrapper {
+        width: 100%;
+    }
+
     ul.timeline li p:nth-child(1) {
         width: 12%;
     }
