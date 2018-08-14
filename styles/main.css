@@ -348,9 +348,26 @@ a.noStyle {
   }
 }
 
+div.photoBackground {
+  background-image: url("/images/photo.jpg");
+  background-position: 0% 50%;
+  background-size:  cover;
+  background-repeat: no-repeat;
+  opacity: 0.65;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
 @media only screen and (min-width: 668px) and (max-width: 1230px) {
   .horizontalInner {
     width: 30vw;
+  }
+
+  div.photoBackground {
+    background-position: 45% 50%;
   }
 }
 
@@ -420,7 +437,26 @@ p.infoText {
 }
 
 @media only screen and (max-width: 700px)  {
+  div.photoBackground {
+    background-position: 45% 50%;
+  }
+
   .mapImage {
     display: none;
   }
+}
+
+/* div.photo {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+div.photo > img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.75;
+} */
+
+h1.invert {
+  color: white !important;
 }
